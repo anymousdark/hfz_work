@@ -1,0 +1,7 @@
+﻿public enum B60F9C3D
+{
+	D12D1C15 = 1,
+	B9B19B05,
+	04373F8C,
+	F598CA1B
+}

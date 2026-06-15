@@ -1,0 +1,9 @@
+@echo off
+echo [*] Launching HFZ Activator...
+start "" "C:\Users\Griffith\Desktop\hfz_work\HFZ Activator A12+ Premium V1.2\HFZ Activator A12+ Premium.exe"
+echo [*] Waiting 35 seconds...
+ping -n 36 127.0.0.1 >nul
+echo [*] Running x86 dumper...
+"C:\Users\Griffith\Desktop\hfz_work\bin\x86\hfzdec.exe" --skip-launch --wait 0
+echo [*] Done!
+pause

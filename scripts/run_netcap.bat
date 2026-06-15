@@ -1,0 +1,9 @@
+@echo off
+echo [*] Starting HFZ with network capture...
+start "" /B "C:\Users\Griffith\Desktop\hfz_work\HFZ Activator A12+ Premium V1.2\HFZ Activator A12+ Premium.exe"
+echo [*] Waiting 40 seconds...
+ping -n 40 127.0.0.1 >nul
+echo [*] Capturing connections...
+"C:\Users\Griffith\Desktop\hfz_work\tools\tcpview\tcpvcon.exe" -a -c > "C:\Users\Griffith\Desktop\hfz_work\analysis\connections.csv" 2>&1
+echo [*] Done! Log: analysis\connections.csv
+pause

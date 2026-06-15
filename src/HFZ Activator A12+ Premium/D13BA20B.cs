@@ -1,0 +1,34 @@
+﻿internal struct D13BA20B
+{
+	private uint 1713B580;
+
+	public uint 9131D083(CF9A9A86 18B62D82)
+	{
+		uint num = (18B62D82.7DBC532F >> 11) * 1713B580;
+		if (18B62D82.BE945224 < num)
+		{
+			18B62D82.7DBC532F = num;
+			1713B580 += 2048 - 1713B580 >> 5;
+			if (18B62D82.7DBC532F < 16777216)
+			{
+				18B62D82.BE945224 = (18B62D82.BE945224 << 8) | (byte)18B62D82.528ADE92.ReadByte();
+				18B62D82.7DBC532F <<= 8;
+			}
+			return 0u;
+		}
+		18B62D82.7DBC532F -= num;
+		18B62D82.BE945224 -= num;
+		1713B580 -= 1713B580 >> 5;
+		if (18B62D82.7DBC532F < 16777216)
+		{
+			18B62D82.BE945224 = (18B62D82.BE945224 << 8) | (byte)18B62D82.528ADE92.ReadByte();
+			18B62D82.7DBC532F <<= 8;
+		}
+		return 1u;
+	}
+
+	public void 911BCF37()
+	{
+		1713B580 = 1024u;
+	}
+}

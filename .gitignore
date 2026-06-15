@@ -1,0 +1,36 @@
+# --- Do NOT distribute original app files ---
+target/
+
+# Analysis large outputs
+analysis/libruntime_strings_full.txt
+analysis/netlog.txt
+analysis/*.ps1
+
+# Built binaries (our tools)
+bin/
+
+# Source projects (our tools)
+src/**/bin/
+src/**/obj/
+
+# Tools (downloaded third-party)
+tools/
+
+# Process dumps
+dumps/
+*.dmp
+*.mdmp
+
+# VS / .NET
+*.user
+*.suo
+.vs/
+Debug/
+Release/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Logs
+myeasylog.log

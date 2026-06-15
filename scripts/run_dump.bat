@@ -1,0 +1,9 @@
+@echo off
+echo [*] Launching HFZ Activator...
+start "" "C:\Users\Griffith\Desktop\hfz_work\HFZ Activator A12+ Premium V1.2\HFZ Activator A12+ Premium.exe"
+echo [*] Waiting 35 seconds...
+timeout /t 35 /nobreak
+echo [*] Running procdump...
+"C:\Users\Griffith\Desktop\hfz_work\tools\procdump\procdump.exe" -ma "HFZ Activator A12+ Premium" "C:\Users\Griffith\Desktop\hfz_work\analysis\dumps\HFZ_batch.dmp" -accepteula -n 1
+echo [*] Done!
+pause

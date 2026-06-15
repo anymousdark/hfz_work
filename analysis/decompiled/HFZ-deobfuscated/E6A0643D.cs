@@ -1,0 +1,6 @@
+﻿using System.Drawing;
+
+internal sealed class E6A0643D
+{
+	internal static extern Color ED955F20(int int_0, int EC1CB33C, int FD3627B7);
+}
